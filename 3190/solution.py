@@ -16,6 +16,9 @@ snakeMaker = "-"
 snakeMakerUpDown = "|"
 appleMaker = "*"
 
+# 뱀은 매 초마다 이동함...
+# 다시짜자...
+
 # 게임 시작 (뱀을 보드에 위치)
 gameMap[0][0] = snakeMaker
 
@@ -25,6 +28,7 @@ for i in range(len(applePosition)):
     B = int(str(applePosition[i])[4])
     gameMap[A][B] = appleMaker
 
+# 뱀 객체
 snakeDi = {
     'current': [0, 0],
     'direction': "0"
